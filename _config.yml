@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Holle Word!
+title: Hexo
 subtitle: ''
 description: ''
 keywords:
-author: Zeng Kai
-language: zh
+author: John Doe
+language: en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://zknb-666.gitee.io
+url: http://example.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,11 +97,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-mellow-1.4.4
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: http
-  repository: http://gitee.com/zknb-666/zknb-666.git
-  branch: master
+  type: ''
