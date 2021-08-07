@@ -520,7 +520,7 @@ img::-moz-selection {
     font-size: 0.6em;
     font-weight: lighter;
     letter-spacing: 3px;
-    color: #CCCCCC;
+    color: #ffffff;
     -webkit-font-smoothing: antialiased; }
 
   .panel-cover {
@@ -744,12 +744,12 @@ img::-moz-selection {
     position: relative;
     width: 100%;
     border-color: #666;
-    color: #666;
+    color: #ffffff;
     /*opacity: .8; */
   }
 
   .navigation__item a:hover {
-    color: #fff;
+    color: #666666;
   }
 
   .navigation__item_social {
@@ -759,7 +759,7 @@ img::-moz-selection {
   }
   .navigation__item_social a {
     position: relative;
-    color: #fff;
+    color: #999;
   }
 
   .navigation__item_social a:hover {
