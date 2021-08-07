@@ -21,35 +21,30 @@ home_background: "background-image:url('https://api.btstu.cn/sjbz/api.php?lx=don
 
 # main menu navigation
 menu:
-  home:
+  主页:
     icon:
-      name: 主页
+      name: home
       theme: filled
     src: /
-  about:
+  关于:
     icon:
       name: idcard
       theme: filled
     src: /about # 当你的博客root为 '/' 时
-  archives:
+  个人介绍:
     icon:
       name: folder
       theme: filled
     src: /archives
-  categories:
+  分类:
     icon:
       name: book
       theme: filled
     src: /like/categories # 当你的博客root不为 '/'，而是其它时，例如 '/like/'
-  tags:
-    icon:
-      name: tags
-      theme: filled
-    src: /like/tags
 # side info card
 card:
   enable: true
-  description: ["正しさなんてもの", "人のモノサシによって変わる"]
+  description: ["菜鸡一个"]
   icon_links:
     github:
       icon:
@@ -57,17 +52,9 @@ card:
         name: github
         theme: filled
         src:
-      link: https://github.com/korilin
-    twitter:
-      icon:
-        type: antd-icon
-        name: twitter
-        theme:
-        src:
-      link: https://twitter.com/korilin_dev
+      link: https://github.com/Im-joker
   friend_links:
-    英文技术博客: https://en.korilin.com
-    日语记录博客: https://jp.korilin.com
+    
 
 # footer info
 footer:
