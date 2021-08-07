@@ -759,7 +759,7 @@ img::-moz-selection {
   }
   .navigation__item_social a {
     position: relative;
-    color: #999;
+    color: #fff;
   }
 
   .navigation__item_social a:hover {
