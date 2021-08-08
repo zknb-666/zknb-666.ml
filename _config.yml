@@ -15,7 +15,7 @@ enableToc: true
 comment:
     livere: MTAyMC81MDk5NC8yNzQ3Ng  # https://www.livere.com
     #disqus: zknb
-    # uyan: 2143225  # 有言id,登录有言官网申请
+    #uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
 social:
@@ -30,8 +30,8 @@ social:
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
-#baidu:
-   # id: 8ba1c6be0953b6f9c2ba38e57f615421  
+baidu:
+    id: 4c57ad19d45c6205e335f0f574a628cb  
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
@@ -65,9 +65,9 @@ blog_button:
 
 # Navigation buttons in the front page.s
 nav:
+    - {title: 欢迎页, description: welcone, url: '/'}
     - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 技术支持, description: support, url: '/support'}      
+    - {title: 标签, description: tags, url: '/tags'}            
     - {title: 关于我, description: about, url: '/about'}   
     
 
