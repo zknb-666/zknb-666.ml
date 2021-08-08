@@ -746,6 +746,7 @@ img::-moz-selection {
     border-color: #666;
     color: #ffffff;
     text-shadow: 1px 1px 1px grey
+    /*opacity: .8; */
   }
 
   .navigation__item a:hover {
