@@ -152,6 +152,7 @@ p {
   line-height: 1.7em; 
   padding-left: 20px;
   font-size: 16px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0)
 }
 
 strong {
@@ -521,7 +522,8 @@ img::-moz-selection {
     font-weight: lighter;
     letter-spacing: 3px;
     color: #ffffff;
-    -webkit-font-smoothing: antialiased; }
+    -webkit-font-smoothing: antialiased; 
+    text-shadow: 2px 2px 2px rgb(0, 0, 0)}
 
   .panel-cover {
     display: block;
@@ -597,7 +599,8 @@ img::-moz-selection {
     color: #FFF;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
   .panel-inverted a {
-    color: #FFF; }
+    color: #FFF; 
+    text-shadow: 2px 2px 2px rgb(0, 0, 0)}
 
   .cover-navigation {
     margin-top: 0px; 
@@ -751,7 +754,7 @@ img::-moz-selection {
     width: 100%;
     border-color: #666;
     color: #ffffff;
-    text-shadow: 1px 1px 1px grey
+    text-shadow: 2px 2px 2px rgb(0, 0, 0)
     /*opacity: .8; */
   }
 
