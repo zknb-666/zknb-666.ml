@@ -60,15 +60,15 @@ textColor: #FF0000
 cover_color: clear
 
 # The blog button should not be removed.
-#blog_button:
-#    title: 博客主页
+blog_button:
+    title: 主页
+   
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 欢迎页, description: welcone, url: '/'}
-    - {title: 文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}            
-    - {title: 关于我, description: about, url: '/about'}   
+    - {title: 文章, description: 杂七杂八的东西, url: '/archive'}   
+    - {title: 标签, description: 杂七杂八的分类, url: '/tags'}            
+    - {title: 关于我, description: 一个废物, url: '/about'}   
     
 
 # Pagination
