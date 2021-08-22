@@ -6,6 +6,6 @@ tag: 介绍
 ---   
 # Holle World
 
-'''c
+```c
 printf("Holle World!");
-'''
+```
