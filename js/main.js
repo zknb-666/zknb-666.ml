@@ -4,7 +4,7 @@ $(document).ready(function() {
   $('a.blog-button').click(function() {
     // If already in blog, return early without animate overlay panel again.
     if (location.href && location.href == "#blog") return;
-    if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
+    if ($('.panel-cover').hasClass('panel-cover--collapsed')) location.reload();
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
     if (currentWidth < 2000) {
