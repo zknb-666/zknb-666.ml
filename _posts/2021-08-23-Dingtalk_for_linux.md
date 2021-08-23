@@ -4,7 +4,7 @@ title: "钉钉"
 description: "Dingtalk"
 tag: 软件
 ---   
-![Dingtalk](./Dingtalk_for_linux/logo.png)
+![Dingtalk](/images/posts/dingtalk_linux/logo.png)
 钉钉正式版终于出了，自留备份
 
 [钉钉Linux正式版 001](https://gitee.com/zknb-666/zknb-666/raw/jekyll/_posts/Dingtalk_for_linux/dingtalk.7z.001)
