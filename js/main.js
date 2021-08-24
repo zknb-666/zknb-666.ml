@@ -3,8 +3,8 @@ $(document).ready(function() {
 
   $('a.blog-button').click(function() {
     // If already in blog, return early without animate overlay panel again.
-    if (location.href && location.href == "#blog") return;
-    if ($('.panel-cover').hasClass('panel-cover--collapsed')) location.reload();
+    if (location.hash && location.hash == "#blog") return;
+    if ($('.panel-cover').hasClass('panel-cover--collapsed'))  return;
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
     if (currentWidth < 2000) {
@@ -20,8 +20,8 @@ $(document).ready(function() {
     // 导航按钮被点击
     // this.style.backgroundColor = '#fff'; 设置颜色后会自动消失
     // If already in blog, return early without animate overlay panel again.
-    if (location.href && location.href == "#blog") return;
-    if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
+    //if (location.hash && location.hash == "#blog") return;
+    //if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
     if (currentWidth < 2000) {
@@ -32,7 +32,7 @@ $(document).ready(function() {
     }
   });  
 
-  if (window.location.href && window.location.href == "#blog") {
+  if (window.location.hash && window.location.hash == "#blog") {
     $('.panel-cover').addClass('panel-cover--collapsed');
     $('.main-post-list').removeClass('hidden');
   }
