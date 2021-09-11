@@ -66,9 +66,9 @@ blog_button:
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 文章, description: 杂七杂八的东西, url: '/archive'}   
-    - {title: 标签, description: 杂七杂八的分类, url: '/tags'}            
-    - {title: 关于我, description: 一个废物, url: '/about'}   
+    - {title: 文章, description: 杂七杂八的东西, url: '/archive/'}   
+    - {title: 标签, description: 杂七杂八的分类, url: '/tags/'}            
+    - {title: 关于我, description: 一个废物, url: '/about/'}   
     
 
 # Pagination
@@ -77,4 +77,4 @@ paginate: 20
 paginate_path: "page/:num/"
 
 
-pjax: true
+# pjax: true
