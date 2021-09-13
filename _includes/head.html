@@ -38,6 +38,10 @@
       (function() {
         var hm = document.createElement("script");
         hm.src = "//hm.baidu.com/hm.js?{{site.baidu.id}}";
+        hm.onload = function() {
+            // 清除百度统计的加载标识
+            delete window["_bdhm_loaded_{{site.baidu.id}}"];
+        };
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
       })();
