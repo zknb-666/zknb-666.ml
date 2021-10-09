@@ -16,6 +16,11 @@ $(document).ready(function() {
 
     
   });
+
+  $('a.reflash').click(function(){
+    location.reload()
+  });
+
   $('a.menu').click(function() {
     // 导航按钮被点击
     // this.style.backgroundColor = '#fff'; 设置颜色后会自动消失
