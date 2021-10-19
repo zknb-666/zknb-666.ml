@@ -1,10 +1,11 @@
 $(document).ready(function() {
 
+ 
 
   $('a.blog-button').click(function() {
+      location.reload();
     // If already in blog, return early without animate overlay panel again.
     if (location.hash && location.hash == "#blog") return;
-    else if($('a.blog-button').click) location.reload();
 
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     $('.main-post-list').removeClass('hidden');
