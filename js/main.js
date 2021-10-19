@@ -3,7 +3,7 @@ $(document).ready(function() {
  
 
   $('a.blog-button').click(function() {
-      location.reload();
+     
     // If already in blog, return early without animate overlay panel again.
     if (location.hash && location.hash == "#blog") return;
 
@@ -40,6 +40,7 @@ $(document).ready(function() {
     $('.panel-cover').addClass('panel-cover--collapsed');
     $('.main-post-list').removeClass('hidden');
   }
+  
 
   if (window.location.pathname.substring(0, 5) == "/tag/") {
     $('.panel-cover').addClass('panel-cover--collapsed');
