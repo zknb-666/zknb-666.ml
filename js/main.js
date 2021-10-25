@@ -46,5 +46,8 @@ $(document).ready(function() {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
 
-  
+  $(document).on('pjax:complete', function () {
+    // 重新加载不蒜子
+    $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+ });
 });
