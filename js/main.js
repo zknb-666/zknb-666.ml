@@ -1,10 +1,18 @@
 $(document).ready(function() {
+  $(document).on('pjax:complete', function () {
+    // 重新加载不蒜子
+    $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+  });
+
+  $(window).on('popstate.pjax', function () {
+  pjax();
+  });
 
   $('a.blog-button').click(function() {
      
     // If already in blog, return early without animate overlay panel again.
     if (location.hash && location.hash == "#blog") return;
-      $('.blog-button').css({opacity:1});
+     // $('.blog-button').css({opacity:1});
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
@@ -43,10 +51,5 @@ $(document).ready(function() {
   if (window.location.pathname.substring(0, 5) == "/tag/") {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
-
-  $(document).on('pjax:complete', function () {
-    // 重新加载不蒜子
-    $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
- });
 
 });
