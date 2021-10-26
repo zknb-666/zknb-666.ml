@@ -3,9 +3,10 @@ $(document).on('pjax:complete', function () {
   $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
 });
 
-$(window).on('popstate.pjax', function () {
+/*$(window).on('popstate.pjax', function () {
   pjax();
   });
+*/
 
 $(document).ready(function() {
   
