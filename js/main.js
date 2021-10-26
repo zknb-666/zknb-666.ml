@@ -1,13 +1,14 @@
-$(document).ready(function() {
-  $(document).on('pjax:complete', function () {
-    // 重新加载不蒜子
-    $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
-  });
+$(document).on('pjax:complete', function () {
+  // 重新加载不蒜子
+  $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+});
 
-  $(window).on('popstate.pjax', function () {
+$(window).on('popstate.pjax', function () {
   pjax();
   });
 
+$(document).ready(function() {
+  
   $('a.blog-button').click(function() {
      
     // If already in blog, return early without animate overlay panel again.
