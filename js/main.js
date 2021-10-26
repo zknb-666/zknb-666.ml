@@ -16,7 +16,7 @@ $(document).ready(function() {
     if (location.hash && location.hash == "#blog") 
     $.pjax({
       // url: '访问后台的url', 
-       container: 'pageContent'
+       container: '#pageContent'
     }); 
 
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
