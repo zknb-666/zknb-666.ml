@@ -13,8 +13,12 @@ $(document).ready(function() {
   $('a.blog-button').click(function() {
      
     // If already in blog, return early without animate overlay panel again.
-    if (location.hash && location.hash == "#blog") return;
-     // $('.blog-button').css({opacity:1});
+    if (location.hash && location.hash == "#blog") 
+    $.pjax({
+      // url: '访问后台的url', 
+       container: 'pageContent'
+    }); 
+
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
