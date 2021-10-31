@@ -1,16 +1,9 @@
-$(document).on('pjax:complete', function () {
+  $(document).on('pjax:complete', function () {
   // 重新加载不蒜子
   $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
-});
-
-$(document).pjax(
-  'a[target!=_blank]', '#pageContent', 
-  {
-    fragment: '#pageContent',timeout: 50000,cache: false
   });
-
 $(document).ready(function() {
-  
+ 
   $('a.blog-button').click(function() {
     // If already in blog, return early without animate overlay panel again.
     if (location.hash && location.hash == "#blog") return; 
@@ -55,9 +48,9 @@ $(document).ready(function() {
 
   $(document).on('pjax:start', function () {
     NProgress.start();
-});
-$(document).on('pjax:end', function () {
+  });
+  $(document).on('pjax:end', function () {
     NProgress.done();
-});
+  });
 
 });
