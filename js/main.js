@@ -11,7 +11,7 @@ $(document).on('pjax:complete', function () {
 $(document).ready(function() {
   
   $('a.blog-button').click(function() {
-    $.pjax.reload('#pageContent', options)
+    $.pjax.reload('#pageContent', options);
     // If already in blog, return early without animate overlay panel again.
     if (location.hash && location.hash == "#blog") return; 
 
