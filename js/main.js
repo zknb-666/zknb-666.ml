@@ -3,18 +3,17 @@ $(document).on('pjax:complete', function () {
   $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
 });
 
-/*$(window).on('popstate.pjax', function () {
-  pjax();
+$(document).pjax(
+  'a[target!=_blank]', '#pageContent', 
+  {
+    fragment: '#pageContent',timeout: 50000,cache: false
   });
-*/
 
 $(document).ready(function() {
   
   $('a.blog-button').click(function() {
-    $.pjax.reload('#pageContent', options);
     // If already in blog, return early without animate overlay panel again.
     if (location.hash && location.hash == "#blog") return; 
-
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
@@ -53,5 +52,12 @@ $(document).ready(function() {
   if (window.location.pathname.substring(0, 5) == "/tag/") {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
+
+  $(document).on('pjax:start', function () {
+    NProgress.start();
+});
+$(document).on('pjax:end', function () {
+    NProgress.done();
+});
 
 });
