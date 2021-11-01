@@ -2,6 +2,7 @@
   // 重新加载不蒜子
   $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
   });
+  
 $(document).ready(function() {
  
   $('a.blog-button').click(function() {
@@ -45,12 +46,5 @@ $(document).ready(function() {
   if (window.location.pathname.substring(0, 5) == "/tag/") {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
-
-  $(document).on('pjax:start', function () {
-    NProgress.start();
-  });
-  $(document).on('pjax:end', function () {
-    NProgress.done();
-  });
 
 });
