@@ -1,12 +1,11 @@
-﻿  $(document).on('pjax:complete', function () {
+﻿ $(document).ready(function() {
+  
+  $(document).on('pjax:complete', function () {
   // 重新加载不蒜子
-  $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+    $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
   });
   
-$(document).ready(function() {
   $('a.blog-button').click(function() {
-    if (location.hash && location.hash == "#blog") return; 
-    if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
     if (currentWidth < 2000) {
@@ -20,11 +19,6 @@ $(document).ready(function() {
   });
 
   $('a.menu').click(function() {
-    // 导航按钮被点击
-    // this.style.backgroundColor = '#fff'; 设置颜色后会自动消失
-    // If already in blog, return early without animate overlay panel again.
-    //if (location.hash && location.hash == "#blog") return;
-    //if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     $('.main-post-list').removeClass('hidden');
     currentWidth = $('.panel-cover').width();
     if (currentWidth < 2000) {
