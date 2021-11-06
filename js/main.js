@@ -4,7 +4,6 @@
   });
   
 $(document).ready(function() {
- 
   $('a.blog-button').click(function() {
     //$.pjax.reload('#pageContent',options);
     // If already in blog, return early without animate overlay panel again.
