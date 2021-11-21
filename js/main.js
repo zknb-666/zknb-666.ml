@@ -2,9 +2,6 @@
     $(document).on("pjax:complete",
     function() {
         $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js")
-        if ($('.panel-cover').hasClass('panel-cover--collapsed')) 
-        $(".cover-clear").addClass("panel-cover--overlay");
-    /* 通过头图判断什么时候添加遮罩*/
     });
     $("a.blog-button").click(function() {
         $(".main-post-list").removeClass("hidden");
@@ -43,5 +40,5 @@
     if (window.location.pathname.substring(0, 5) == "/tag/") {
         $(".panel-cover").addClass("panel-cover--collapsed")
     }  
-   
+    
 });
