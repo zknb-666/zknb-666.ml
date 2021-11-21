@@ -69,9 +69,14 @@
     </div>
     
     {% if site.cover_color %}
-    <div class="panel-cover--overlay cover-{{site.cover_color}}"></div>
+    
+    <div class="cover-{{site.cover_color}}"></div>
+    <script>
+    if ($('.panel-cover').hasClass('panel-cover--collapsed')) 
+    $(".cover-clear").addClass("panel-cover--overlay");
+    </script>
     {% else %}
-    <div class="panel-cover--overlay cover-disabled"></div>
+    <div class="cover-disabled"></div>
     {% endif %}
   </div>
 </header>
