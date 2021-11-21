@@ -40,5 +40,7 @@
     if (window.location.pathname.substring(0, 5) == "/tag/") {
         $(".panel-cover").addClass("panel-cover--collapsed")
     }  
-    
+    if (window.location.hash && window.location.hash == "/") 
+    $(".cover-clear").removeClass("panel-cover--overlay");
+
 });
