@@ -531,7 +531,6 @@ img::-moz-selection {
     width: 100%;
     max-width: none;
     height: 100%;
-    background: url(https://api.btstu.cn/sjbz/api.php?lx=dongman&amp;format=images) /*top left no-repeat #666666*/;
     background-size: cover; }
 
   .panel-cover--collapsed {
@@ -546,9 +545,11 @@ img::-moz-selection {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(68, 68, 68, 0.6);
-    background-image: -webkit-linear-gradient(-410deg, rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9));
-    background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.6) 20%, rgba(0, 0, 0, 0.9)); } 
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+    background-color: rgba(0, 100, 255, 0.5);
+    background-image: inherit;
+   } 
 
   .panel-cover__logo {
     margin-bottom: .2em; }
