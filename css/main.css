@@ -537,7 +537,11 @@ img::-moz-selection {
     width: 22%;
     max-width: 320px; }
 
-  .panel-cover--overlay {
+  .panel-cover--overlay{
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    background-color: rgba(0, 100, 255, 0.5);
+    background-image: inherit;
     display: block;
     position: absolute;
     z-index: 0;
@@ -545,10 +549,6 @@ img::-moz-selection {
     right: 0;
     bottom: 0;
     left: 0;
-    -webkit-filter: blur(15px);
-    filter: blur(15px);
-    background-color: rgba(0, 100, 255, 0.5);
-    background-image: inherit;
    } 
 
   .panel-cover__logo {
