@@ -1,9 +1,15 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
+<!--pjax-->
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax/jquery.pjax.min.js"></script>
+<script>$(document).pjax('a[target!=_blank]', '#pageContent', {fragment: '#pageContent',timeout: 50000,cache: false});</script>
+
 <!--glidejs-->
 <script src="https://cdn.jsdelivr.net/npm/glidejs/dist/glide.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glidejs/dist/css/glide.core.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glidejs/dist/css/glide.theme.css">
+
 <!--Highlight-->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
 <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
@@ -15,10 +21,6 @@
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
-
-<!--pjax-->
-<script src="https://cdn.jsdelivr.net/npm/jquery-pjax/jquery.pjax.min.js"></script>
-<script>$(document).pjax('a[target!=_blank]', '#pageContent', {fragment: '#pageContent',timeout: 50000,cache: false});</script>
 
 <!--一言-->
 <script src="https://v1.hitokoto.cn/?c=a&encode=js&select=%23hitokoto" defer></script>
