@@ -541,6 +541,7 @@ img::-moz-selection {
   .panel-cover--overlay{
     filter: blur(15px);
     -webkit-filter: blur(15px);
+    background-size: 110%;
     background-color: rgba(0, 100, 255, 0.5);
     background-image: inherit;
     transition: all 1s;
