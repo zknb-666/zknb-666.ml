@@ -544,10 +544,13 @@ img::-moz-selection {
     background-color: rgba(0, 100, 255, 0.5);
     background-image: inherit;
     transition: all 1s;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
    } 
 
   .panel-cover__logo {
