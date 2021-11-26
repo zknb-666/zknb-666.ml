@@ -27,6 +27,12 @@ social:
     # twitter: 
     mail: 2865467965@qq.com
 
+#Music
+meting:
+    server: tencent
+    type: playlist
+    id: 2139464986
+    theme: #ff0000
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
@@ -36,15 +42,11 @@ baidu:
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
 #ga:
- #   id: UA-84134159-3  
-  #  host: auto  
+#   id: UA-84134159-3  
+#  host: auto  
 
 
 # 《----------------- 上面的信息修改成你自己的 ---------------------------》
-#
-#
-#  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 地址： https://github.com/leopardpan/leopardpan.github.io
 #
 #
 # 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
@@ -70,12 +72,7 @@ nav:
     - {title: 标签, description: 杂七杂八的分类, url: '/tags/'}            
     - {title: 关于我, description: 一个废物, url: '/about/'}   
     
-#Music
-meting:
-    server: tencent
-    type: playlist
-    id: 2139464986
-    theme: #ff0000
+
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
