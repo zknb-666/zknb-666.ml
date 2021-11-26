@@ -525,7 +525,7 @@ img::-moz-selection {
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   }
   .panel-cover {
-     display: block;
+    display: block;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -542,7 +542,8 @@ img::-moz-selection {
     left: 0;
     bottom: 0;
     right: 0;
-    filter: blur(10px);
+    filter: blur(5px);
+    background-size: cover;
     background-image: inherit;
     transition: all 1s;
    } 
