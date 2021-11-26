@@ -70,6 +70,12 @@ nav:
     - {title: 标签, description: 杂七杂八的分类, url: '/tags/'}            
     - {title: 关于我, description: 一个废物, url: '/about/'}   
     
+#Music
+meting:
+    server: tencent
+    type: playlist
+    id: 2139464986
+    theme: #ff0000
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
