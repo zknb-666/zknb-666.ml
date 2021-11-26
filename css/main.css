@@ -525,13 +525,11 @@ img::-moz-selection {
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   }
   .panel-cover {
-    display: block;
+     display: block;
     position: fixed;
-    z-index: 900;
     width: 100%;
-    max-width: none;
     height: 100%;
-    background-size: cover; }
+    background-size: cover;}
 
   .panel-cover--collapsed {
     width: 22%;
@@ -539,18 +537,14 @@ img::-moz-selection {
    }
 
   .panel-cover--overlay{
-    filter: blur(15px);
-    -webkit-filter: blur(15px);
-    background-color: rgba(0, 100, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    filter: blur(10px);
     background-image: inherit;
     transition: all 1s;
-    display: block;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
    } 
 
   .panel-cover__logo {
