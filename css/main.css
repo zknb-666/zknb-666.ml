@@ -545,7 +545,7 @@ img::-moz-selection {
     filter: blur(5px);
     background-size: cover;
     background-image: inherit;
-    transition: all 1s;
+    transition: .5s ease-in-out;
    } 
 
   .panel-cover__logo {

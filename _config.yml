@@ -32,6 +32,7 @@ social:
 
 #Music
 meting:
+    autohide: ture
     server: tencent
     type: playlist
     id: 2139464986
