@@ -11,6 +11,9 @@ url: "https://zknb-666.gitee.io"
 # 博客是否自动生成目录，false为不生成
 enableToc: true
 
+#Background
+background: https://www.dmoe.cc/random.php
+
 # Comment
 comment:
     livere: MTAyMC81MDk5NC8yNzQ3Ng  # https://www.livere.com
