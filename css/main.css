@@ -805,6 +805,9 @@ img::-moz-selection {
     font-size: .8em;
     color: #999999; 
   }
+  .pagination__page-number_px {
+    font-size: 0 !important;
+  }
 
   .pagination__newer {
     margin-right: 1em; 

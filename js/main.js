@@ -43,5 +43,6 @@
         $(".cover-clear").addClass("panel-cover--overlay");
         $('.panel-cover').removeClass('cnm');
         $('.panel-cover').addClass('cnmb');
+        $('.pagination__page-number').removeClass('pagination__page-number_px');
     }
 });
