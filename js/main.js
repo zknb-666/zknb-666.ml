@@ -7,7 +7,7 @@
         $.getScript("/js/main.js");
     });
     $("a.blog-button").click(function() {
-        $(".main-post-list").removeClass("hidden");
+       
         currentWidth = $(".panel-cover").width();
         if (currentWidth < 2000) {
             $(".panel-cover").addClass("panel-cover--collapsed")
@@ -22,7 +22,7 @@
         }
     });
     $("a.menu").click(function() {
-        $(".main-post-list").removeClass("hidden");
+
         currentWidth = $(".panel-cover").width();
         if (currentWidth < 2000) {
             $(".panel-cover").addClass("panel-cover--collapsed")
@@ -43,6 +43,7 @@
         $(".cover-clear").addClass("panel-cover--overlay");
         $('.panel-cover').removeClass('cnm');
         $('.panel-cover').addClass('cnmb');
-        $('.pagination__page-number').removeClass('pagination__page-number_px');
+        $(".main-post-list").removeClass("hidden");
+        $('.footer').removeClass('hidden');
     }
 });
