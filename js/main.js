@@ -1,13 +1,12 @@
 ﻿$(document).ready(function() {
     $(document).on("pjax:complete",
     function() {
-        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        $.getScript("https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
     });
     $("a").click(function(){
         $.getScript("/js/main.js");
     });
     $("a.blog-button").click(function() {
-       
         currentWidth = $(".panel-cover").width();
         if (currentWidth < 2000) {
             $(".panel-cover").addClass("panel-cover--collapsed")
@@ -22,7 +21,6 @@
         }
     });
     $("a.menu").click(function() {
-
         currentWidth = $(".panel-cover").width();
         if (currentWidth < 2000) {
             $(".panel-cover").addClass("panel-cover--collapsed")
