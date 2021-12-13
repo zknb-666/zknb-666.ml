@@ -1,10 +1,16 @@
 ﻿$(document).ready(function() {
     $(document).on("pjax:complete",
     function() {
+<<<<<<< HEAD
         $.getScript("https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+=======
+        $.getScript("/js/main.js");
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+>>>>>>> 9fc77e1781ed666d3eef3d90fa62c805236c8d7a
     });
     $("a").click(function(){
         $.getScript("/js/main.js");
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
     });
     $("a.blog-button").click(function() {
         currentWidth = $(".panel-cover").width();

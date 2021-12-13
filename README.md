@@ -1,3 +1,3 @@
 [CNpage](https://zknb-666.gitee.io)
 
-[page](https://zknb-666.github.io)
+[page](https://zknb-666.vercel.app)
