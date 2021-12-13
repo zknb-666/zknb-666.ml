@@ -1,13 +1,12 @@
 ﻿$(document).ready(function() {
     $(document).on("pjax:complete",
     function() {
-        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
         $.getScript("/js/main.js");
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
     });
-   /* $("a").click(function(){
+    $("a").click(function(){
         $.getScript("/js/main.js");
         $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
-    });*/
     });
     $("a.blog-button").click(function() {
        
