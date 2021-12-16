@@ -6,7 +6,6 @@
 $(document).ready(function() { 
    $("a").click(function(){
         $.getScript("/js/main.js");
-        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
     });
     $("a.blog-button").click(function() {
         currentWidth = $(".panel-cover").width();
