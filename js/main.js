@@ -1,12 +1,9 @@
 ﻿   $(document).on("pjax:complete",
     function() {
         $.getScript("/js/main.js");
-        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        $.getScript("https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
     });
 $(document).ready(function() { 
-   $("a").click(function(){
-        $.getScript("/js/main.js");
-    });
     $("a.blog-button").click(function() {
         currentWidth = $(".panel-cover").width();
         if (currentWidth < 2000) {
