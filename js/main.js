@@ -1,9 +1,4 @@
-﻿    $(document).on("pjax:complete",
-    function() {
-        $.getScript("https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
-        $.getScript("/js/hide.js");
-    });
-    $("a.blog-button").click(function() {
+﻿    $("a.blog-button").click(function() {
         currentWidth = $(".panel-cover").width();
         if (currentWidth < 2000) {
             $(".panel-cover").addClass("panel-cover--collapsed")
@@ -15,6 +10,7 @@
             },
             400, swing = "swing");
         }
+        $.getScript("/js/main.js");
     });
     $("a.menu").click(function() {
         currentWidth = $(".panel-cover").width();
@@ -32,3 +28,9 @@
     if (window.location.hash && window.location.hash == "#blog") {
         $(".panel-cover").addClass("panel-cover--collapsed");
     }
+    if ($('.panel-cover').hasClass('panel-cover--collapsed')) {
+        $(".cover-clear").addClass("panel-cover--overlay");
+        $('.panel-cover').removeClass('cnm');
+        $('.panel-cover').addClass('cnmb');
+        $(".main-post-list").removeClass("hidden");
+        $('.footer').removeClass('hidden');}
