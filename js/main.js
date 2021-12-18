@@ -1,4 +1,7 @@
-﻿    $("a.blog-button").click(function() {
+﻿   $(document).on("pjax:complete",function(){
+    hljs.initHighlighting();
+   });
+   $("a.blog-button").click(function() {
         currentWidth = $(".panel-cover").width();
         if (currentWidth < 2000) {
             $(".panel-cover").addClass("panel-cover--collapsed")
@@ -24,6 +27,7 @@
             },
             400, swing = "swing");
         }
+        Prism.highlightAll();
     });
     if (window.location.hash && window.location.hash == "#blog") {
         $(".panel-cover").addClass("panel-cover--collapsed");
