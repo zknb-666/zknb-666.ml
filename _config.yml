@@ -36,7 +36,7 @@ meting:
     server: tencent
     type: playlist
     id: 2139464986
-    theme: #ff0000
+    theme: ff0000
 
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
