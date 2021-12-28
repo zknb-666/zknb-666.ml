@@ -6,7 +6,7 @@ description: 欢迎来到备考中の破站~
 avatarTitle: 点击
 # 头像里面的描述
 avatarDesc: 进入博客主页
-url: "https://zknb-666.gitee.io"
+url: "https://zknb-666.ml"
 
 # 博客是否自动生成目录，false为不生成
 enableToc: true
@@ -41,7 +41,7 @@ meting:
 # 百度统计 
 # 使用博客模板请去掉或者更换 id 
 baidu:
-    id: 4c57ad19d45c6205e335f0f574a628cb  
+    id: 78dabddbcdea439ca4959d5e2057b184 
 
 # Google Analytics
 # 使用博客模板请去掉或者更换 id
