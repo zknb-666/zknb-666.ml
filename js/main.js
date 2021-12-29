@@ -1,5 +1,6 @@
 ﻿   $(document).on("pjax:complete",function(){
     hljs.initHighlighting();
+    $.getScript("/js/main.js");
    });
    $("a.blog-button").click(function() {
         currentWidth = $(".panel-cover").width();
@@ -13,7 +14,7 @@
             },
             400, swing = "swing");
         }
-        $.getScript("/js/main.js");
+        
     });
     $("a.menu").click(function() {
         currentWidth = $(".panel-cover").width();
