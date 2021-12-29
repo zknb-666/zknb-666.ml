@@ -36,5 +36,4 @@
         $(".cover-clear").addClass("panel-cover--overlay");
         $('.panel-cover').removeClass('cnm');
         $('.panel-cover').addClass('cnmb');
-        $(".main-post-list").removeClass("hidden");
-        $('.footer').removeClass('hidden');}
+        $(".main-post-list").removeClass("hidden");}
