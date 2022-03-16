@@ -28,8 +28,13 @@
 
     <div class="content-wrapper">
         <div class=" content-wrapper__inner">
-          <div id="pageContent">{{ content }}</div>
-            
+          <div id="pageContent">
+            <script> 
+            if ($('.panel-cover').hasClass('panel-cover--collapsed'))
+             {$(".main-post-list").removeClass("hidden");}
+            </script>
+            {{ content }}
+          </div> 
         </div>
         {% include footer.html %}
     </div>
