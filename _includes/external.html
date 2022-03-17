@@ -1,21 +1,25 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 
-<!--pjax-->
+<!-- pjax -->
 <script src="https://cdn.jsdelivr.net/npm/jquery-pjax/jquery.pjax.min.js"></script>
-<script>$(document).pjax('a[target!=_blank]', '#pageContent', {fragment: '#pageContent',timeout: 50000,cache: false});</script>
+<script>$(document).pjax('a[target!=_blank]', '#pageContent', {fragment: '#pageContent',timeout: 50000,cache: false});$(document).on('pjax:start', function() { NProgress.start(); });$(document).on('pjax:end',   function() { NProgress.done();  });</script>
 
-<!--glidejs-->
+<!-- nprogress -->
+<script src="https://cdn.jsdelivr.net/npm/nprogress/nprogress.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress/nprogress.min.css">
+
+<!-- glidejs -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glidejs/dist/css/glide.core.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glidejs/dist/css/glide.theme.css">
 <script src="https://cdn.jsdelivr.net/npm/glidejs/dist/glide.min.js"></script>
 
-<!--Highlight-->
+<!-- Highlight -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 
-<!--Hls-->
+<!-- Hls -->
 <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
 
 <!-- require APlayer -->
@@ -25,5 +29,5 @@
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
 
-<!--一言-->
+<!-- 一言 -->
 <script src="https://v1.hitokoto.cn/?c=a&encode=js&select=%23hitokoto" defer></script>
