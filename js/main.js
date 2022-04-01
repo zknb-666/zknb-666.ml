@@ -1,4 +1,8 @@
-﻿   $(document).on("pjax:complete",function(){
+﻿document.onreadystatechange = function () {
+    if (document.readyState == "complete") {    
+        $(".loading-div").hide();
+        $('body').css('overflow','scroll');}}
+   $(document).on("pjax:complete",function(){
     hljs.initHighlighting();
    });
    $("a").click(function() {
@@ -24,4 +28,5 @@
         $('.panel-cover').removeClass('cnm');
         $('.panel-cover').addClass('cnmb');
         $(".main-post-list").removeClass("hidden");
-        $('.footer_div').removeClass('hidden');}
+        $('.footer_div').removeClass('hidden');
+    }

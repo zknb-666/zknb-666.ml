@@ -18,6 +18,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1; 
+  overflow: hidden;
 }
 
 ol, ul {
@@ -390,6 +391,21 @@ img::-moz-selection {
     border-radius: 3px;
     text-align: center;
     color: #FFF; }
+  
+  .loading-div {
+      width: 1800px;
+      height: 720px;
+      background-color: #fff;
+      display: table-cell;
+      vertical-align: middle;
+      color: #555;
+      overflow: hidden;
+      text-align: center;
+    }
+  .loading-div::before {
+      display: inline-block;
+      vertical-align: middle;
+    } 
 
   .container {
     position: relative;
@@ -400,7 +416,8 @@ img::-moz-selection {
   .content-wrapper {
     z-index: 800;
     width: 70%;
-    margin-left: 30%; }
+    margin-left: 30%; 
+  }
 
   .content-wrapper__inner {
     /*margin: 0 10%;*/
