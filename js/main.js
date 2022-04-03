@@ -1,7 +1,8 @@
 ﻿document.onreadystatechange = function () {
     if (document.readyState == "complete") {    
         $(".loading-div").hide();
-        $('body').css('overflow','scroll');}}
+        //$('body').css('overflow','scroll');
+    }}
    $(document).on("pjax:complete",function(){
     hljs.initHighlighting();
    });
