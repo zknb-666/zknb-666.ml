@@ -32,11 +32,7 @@
 
     <div class="content-wrapper">
         <div class=" content-wrapper__inner">
-          <div id="pageContent">
-            <script> 
-            if ($('.panel-cover').hasClass('panel-cover--collapsed'))
-             {$(".main-post-list").removeClass("hidden");}
-            </script>
+          <div id="pageContent" class="hidden loadhidden"> 
             {{ content }}
           </div> 
         </div>

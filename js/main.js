@@ -1,7 +1,8 @@
 ﻿document.onreadystatechange = function () {
     if (document.readyState == "complete") {    
         $(".loading-div").hide();
-        //$('body').css('overflow','scroll');
+        $("#pageContent").removeClass("loadhidden");
+        $('.footer_div').removeClass('loadhidden');
     }}
    $(document).on("pjax:complete",function(){
     hljs.initHighlighting();
@@ -26,8 +27,6 @@
     }
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) {
         $(".cover-clear").addClass("panel-cover--overlay");
-        $('.panel-cover').removeClass('cnm');
-        $('.panel-cover').addClass('cnmb');
-        $(".main-post-list").removeClass("hidden");
+        $("#pageContent").removeClass("hidden");
         $('.footer_div').removeClass('hidden');
     }

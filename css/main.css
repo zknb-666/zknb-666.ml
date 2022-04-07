@@ -461,6 +461,9 @@ img::-moz-selection {
     margin: 2.2em 0 2.1em 0;
     border-top: 1px solid #DDDDDD; 
   }
+  
+  .loadhidden {
+    display: none !important; }
 
   .hidden {
     display: none !important; }
@@ -547,17 +550,11 @@ img::-moz-selection {
     width: 100%;
     height: 100%;
     transition: .5s ease-in-out;}
-  .cnm {
-      background-size: cover;
-      transition: .5s ease-in-out;}
-  .cnmb {
-    background-size: 0;
-    transition: .5s ease-in-out;
-  }
 
   .panel-cover--collapsed {
     width: 22%;
     max-width: 320px;
+    background-size: 0;
     transition: .5s ease-in-out;
    }
 
