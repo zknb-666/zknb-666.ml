@@ -78,7 +78,8 @@ blog_button:
 nav:
     - {title: 文章, description: 杂七杂八的东西, url: '/archive/'}   
     - {title: 标签, description: 杂七杂八的分类, url: '/tags/'}            
-    - {title: 关于我, description: 一个废物, url: '/about/'}   
+    - {title: 关于我, description: 一个废物, url: '/about/'}
+    - {title: 下载站, description: 垃圾堆, url: 'https://pan.zknb-666.ml'}   
     
 
 
