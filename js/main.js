@@ -1,4 +1,4 @@
-﻿document.onreadystatechange = function () {
+document.onreadystatechange = function () {
     if (document.readyState == "complete") {    
         $(".loading-div").hide();
         $("#pageContent").removeClass("loadhidden");
