@@ -1,7 +1,7 @@
 # Basic
-title: 备考中
-subtitle: 个人站
-description: 欢迎来到备考中の破站~
+title: zknb
+subtitle: Blog
+description: 欢迎来到zknbの破站~
 # 头像里面的标题
 avatarTitle: 点击
 # 头像里面的描述
@@ -19,10 +19,7 @@ comment:
     livere: MTAyMC81MzcwNy8zMDE4MA==  # https://www.livere.com
     #disqus: zknb
     #uyan: 2143225  # 有言id,登录有言官网申请
-    #valine: # https://valine.js.org/
-    #   appid: Czbp5FiGs4gJVlfMk9wrHG7X-MdYXbMMI # Appid 详细见https://valine.js.org/quickstart.html
-    #  appkey: V7ErQOVNoh4rKvESvbso8lbh #Appkey
-
+    
 # Social
 social:
     QQ: 2865467965
