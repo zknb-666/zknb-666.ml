@@ -1,18 +1,5 @@
 <section class="post-comments">
-    {% if site.comment.valine %}
-    <div id="vcomments"></div>
-    <script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: '{{site.comment.valine.appid}}',
-            appKey: '{{site.comment.valine.appkey}}'
-        });
-    </script>
-    <noscript>要查看<a href="https://valine.js.org"> Valine </a>评论，请启用 JavaScript</noscript>
-  
-    {% elsif site.comment.livere %}
+    {% if site.comment.livere %}
 
       <div id="lv-container" data-id="city" data-uid="{{site.comment.livere}}">
       <script type="text/javascript">

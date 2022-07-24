@@ -29,4 +29,5 @@ document.onreadystatechange = function () {
         $(".cover-clear").addClass("panel-cover--overlay");
         $("#pageContent").removeClass("hidden");
         $('.footer_div').removeClass('hidden');
+        setTimeout(function(){  $(".panel-cover").addClass("bgsize");});
     }

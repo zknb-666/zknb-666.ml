@@ -18,7 +18,6 @@ background: https://api.ixiaowai.cn/api/api.php
 comment:
     livere: MTAyMC81MzcwNy8zMDE4MA==  # https://www.livere.com
     #disqus: zknb
-    #uyan: 2143225  # 有言id,登录有言官网申请
     
 # Social
 social:
