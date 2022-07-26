@@ -1,35 +1,32 @@
 <header class="panel-cover {% if page.layout == 'post' or page.layout == 'page' %}panel-cover--collapsed{% endif %}" style="background-image: url('{{site.background}}')">
   <div class="panel-main">
     <div class="panel-main__inner">
-      <div>
-  <meting-js
-  preload="ture"
-  fixed="ture"
-  server="{{site.meting.server}}"
-  type="{{site.meting.type}}"
-  id="{{site.meting.id}}"
-  theme="#{{site.meting.theme}}"
-  >
-</meting-js>
+        <meting-js
+        preload="ture"
+        fixed="ture"
+        server="{{site.meting.server}}"
+        type="{{site.meting.type}}"
+        id="{{site.meting.id}}"
+        theme="#{{site.meting.theme}}">
+        </meting-js>
 {% if site.aplayer.autohide == ture %}
 <style type="text/css">
 
-  .aplayer.aplayer-narrow .aplayer-body {
+.aplayer.aplayer-narrow .aplayer-body {
     left: -66px !important;
 }
 .aplayer-body:hover {
     left: 0px !important;
 }
 .aplayer.aplayer-fixed .aplayer-lrc {
-    color: white !important;
-    mix-blend-mode: difference !important;
-    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000 !important;
 }
-
-
+.aplayer .aplayer-lrc p{
+  color: white !important;
+  mix-blend-mode: difference !important;
+}
 </style>
 {% endif %}
-  </div>
     <div class="panel-main__content panel-inverted">
         <!-- 头像效果-start -->
         <div class="ih-item circle effect right_to_left">            
@@ -62,12 +59,9 @@
         <br>
         <div class="panel-cover__hitokoto">中二语录:</div><p id="hitokoto" class="panel-cover__hitokoto"><a href="#" id="hitokoto_text">废话加载中...</a></p>
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
-        
         {% if site.welcome_message %}
         <p class="panel-cover__description">{{ site.welcome_message }}</p>
         {% endif %}
-        
-
         <div class="navigation-wrapper">
           <div>
             <nav class="cover-navigation cover-navigation--primary">
@@ -80,16 +74,13 @@
             </nav>
           </div>          
         </div>
-
-
-        </div>
       </div>
     </div>
-    
-    {% if site.cover_color %}
-    <div class="cover-{{site.cover_color}}"></div>
-    {% else %}
-    <div class="cover-disabled"></div>
-    {% endif %}
   </div>
+{% if site.cover_color %}
+<div class="cover-{{site.cover_color}}"></div>
+{% else %}
+<div class="cover-disabled"></div>
+{% endif %}
+</div>
 </header>

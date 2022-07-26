@@ -511,8 +511,7 @@ img::-moz-selection {
     border: none;
     box-shadow: none; 
   }*/
-
-  .post img {
+   .post img {
     max-width: 100%;
     margin: 0 auto;
     border-radius: 3px;
@@ -1232,7 +1231,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 .ih-item.circle.effect {
