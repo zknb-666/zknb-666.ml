@@ -4,6 +4,7 @@ document.onreadystatechange = function () {
         $("#pageContent").removeClass("loadhidden");
         $('.footer_div').removeClass('loadhidden');
     }}
+    
    $(document).on("pjax:complete",function(){
     hljs.initHighlighting();
    });
@@ -30,4 +31,17 @@ document.onreadystatechange = function () {
         $("#pageContent").removeClass("hidden");
         $('.footer_div').removeClass('hidden');
         setTimeout(function(){  $(".panel-cover").addClass("bgsize");});
+    }
+    /*打赏脚本*/
+    $(function(){
+        $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/images/payimg/"+dataid+"img.png");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+        });
+    });
+    function dashangToggle(){
+        $(".hide_box").fadeToggle();
+        $(".shang_box").fadeToggle();
     }
