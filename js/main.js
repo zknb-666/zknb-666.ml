@@ -1,6 +1,6 @@
 document.onreadystatechange = function () {
     if (document.readyState == "complete") {    
-        $(".loading-div").hide();
+        $(".loader-div").hide();
         $("#pageContent").removeClass("loadhidden");
         $('.footer_div').removeClass('loadhidden');
     }}
