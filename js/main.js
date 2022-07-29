@@ -1,14 +1,19 @@
-document.onreadystatechange = function () {
+    /*加载等待*/
+    document.onreadystatechange = function () {
     if (document.readyState == "complete") {    
         $(".loader-div").hide();
         $("#pageContent").removeClass("loadhidden");
         $('.footer_div').removeClass('loadhidden');
     }}
-    
-   $(document).on("pjax:complete",function(){
-    hljs.initHighlighting();
-   });
-   $("a").click(function() {
+    /*加载等待结束*/
+    /*Pjax功能*/
+    $(document).pjax('a[target!=_blank]', '#pageContent', {fragment: '#pageContent'});
+    $(document).on('pjax:start',function() { NProgress.start();});
+    $(document).on('pjax:end',function() { NProgress.done();});
+    $(document).on("pjax:complete",function(){hljs.initHighlighting();});
+    /*Pjax功能结束*/
+    /*超链接触发*/
+    $("a").click(function() {
         currentWidth = $(".panel-cover").width();
         if (currentWidth < 2000) {
             $(".panel-cover").addClass("panel-cover--collapsed")
@@ -23,16 +28,20 @@ document.onreadystatechange = function () {
         $.getScript("/js/main.js");
         Prism.highlightAll();
     });
+    /*超链接触发结束*/
+    /*逻辑判断*/
     if (window.location.hash && window.location.hash == "#blog") {
         $(".panel-cover").addClass("panel-cover--collapsed");
     }
+
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) {
         $(".cover-clear").addClass("panel-cover--overlay");
         $("#pageContent").removeClass("hidden");
         $('.footer_div').removeClass('hidden');
-        setTimeout(function(){  $(".panel-cover").addClass("bgsize");});
+        setTimeout(function(){  $(".panel-cover").addClass("bgsize");},15);
     }
-    /*打赏脚本*/
+    /*逻辑判断结束*/
+    /*打赏*/
     $(function(){
         $(".pay_item").click(function(){
             $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
@@ -41,7 +50,10 @@ document.onreadystatechange = function () {
             $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
         });
     });
+
     function dashangToggle(){
+        $.getScript("/js/main.js");
         $(".hide_box").fadeToggle();
         $(".shang_box").fadeToggle();
     }
+    /*打赏结束*/
