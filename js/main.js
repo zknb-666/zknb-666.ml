@@ -7,7 +7,7 @@
     }}
     /*加载等待结束*/
     /*Pjax功能*/
-    $(document).pjax('a[target!=_blank]', '#pageContent', {fragment: '#pageContent'});
+    $(document).pjax('a[target!=_blank]', '#pageContent', {fragment: '#pageContent',timeout: 50000,cache: false});
     $(document).on('pjax:start',function() { NProgress.start();});
     $(document).on('pjax:end',function() { NProgress.done();});
     $(document).on("pjax:complete",function(){hljs.initHighlighting();});
