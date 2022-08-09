@@ -1,4 +1,4 @@
-<header class="panel-cover {% if page.layout == 'post' or page.layout == 'page' %}panel-cover--collapsed{% endif %}" style="background-image: url('{{site.background}}')">
+<header class="panel-cover {% if page.layout == 'post' or page.layout == 'page' %}panel-cover--collapsed{% endif %} darkmode-ignore" style="background-image: url('{{site.background}}')">
   <div class="panel-main">
     <div class="panel-main__inner">
         <meting-js
@@ -17,13 +17,6 @@
 }
 .aplayer-body:hover {
     left: 0px !important;
-}
-.aplayer.aplayer-fixed .aplayer-lrc {
-  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000 !important;
-}
-.aplayer .aplayer-lrc p{
-  color: white !important;
-  mix-blend-mode: difference !important;
 }
 </style>
 {% endif %}
