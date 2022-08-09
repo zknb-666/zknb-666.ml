@@ -10,6 +10,11 @@
 
 <!-- darkmodejs -->
 <script src="//cdn.jsdelivr.net/npm/darkmode-js/lib/darkmode-js.min.js"></script>
+<style>
+.darkmode-toggle{
+    z-index: 99999;
+}
+</style>
 
 <!-- fontawesome -->
 <script src="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
@@ -31,6 +36,15 @@
 <!-- require APlayer -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<style>
+.aplayer.aplayer-fixed .aplayer-lrc {
+   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000 !important;
+}
+.aplayer .aplayer-lrc p{
+   color: white !important;
+   mix-blend-mode: difference !important;
+}
+</style>
 
 <!-- require MetingJS -->
 <script src="//cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
