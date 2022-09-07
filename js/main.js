@@ -26,7 +26,6 @@
             400, swing = "swing");
         }
         $.getScript("/js/main.js");
-        Prism.highlightAll();
     });
     /*超链接触发结束*/
     /*逻辑判断*/
