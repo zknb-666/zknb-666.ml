@@ -57,16 +57,11 @@
         $(".shang_box").fadeToggle();
     }
     /*打赏结束*/
-    /*黑夜模式*/
-    function addDarkmodeWidget() {
-        const options = {
-            saveInCookies: false, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-          }
-          
-          const darkmode = new Darkmode(options);
-          darkmode.showWidget();
-                }
-      window.addEventListener('load', addDarkmodeWidget);
-    /*黑夜模式结束*/
+    /*darkmode*/
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+        // dark mode do something
+        }
+    /*darkmode end*/
