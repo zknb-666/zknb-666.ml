@@ -615,6 +615,8 @@ img::-moz-selection {
     filter: blur(5px);
     background-size: cover;
     background-image: inherit;
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
    } 
 
   .panel-cover__logo {
