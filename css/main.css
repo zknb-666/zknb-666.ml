@@ -101,7 +101,7 @@ h2,
 h3,
 h4,
 h5,
-h5 {
+h6 {
   margin-top: 1.0em;
   margin-bottom: .5em;
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
@@ -1537,5 +1537,20 @@ nav a {
   background: #222;
   color: #eee;
   }
+  h1,h2,h3,h4,h5,h6 {
+    color:rgb(255, 255, 255);
+  }
+  #container .reply-content {
+    color: #fff !important;
+}
+#container .reply-btn-group .reply-comment-btn .comment-title {
+   color: #fff !important;
+}
+.loader{
+  background: #000;
+}
+.loader-div{
+  background-color: #000;
+}
   }
 /*darkmode eng*/
