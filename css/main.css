@@ -615,9 +615,10 @@ img::-moz-selection {
     filter: blur(5px);
     background-size: cover;
     background-image: inherit;
-    border-top-right-radius:50px;
-    border-bottom-right-radius:50px;
+    border-radius:50px;
+    border:2px solid;
    } 
+   @media screen and (max-width)
 
   .panel-cover__logo {
     margin-bottom: .2em; }
