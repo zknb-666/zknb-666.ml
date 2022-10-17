@@ -618,7 +618,6 @@ img::-moz-selection {
     border-radius:50px;
     border:2px solid;
    } 
-   @media screen and (max-width)
 
   .panel-cover__logo {
     margin-bottom: .2em; }
@@ -1551,7 +1550,13 @@ nav a {
   background: #000;
 }
 .loader-div{
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
+}
+.aplayer.aplayer-fixed .aplayer-body{
+  background: rgb(0, 0, 0) !important;
+}
+.aplayer svg{
+  background: #000 !important;
 }
   }
 /*darkmode eng*/
