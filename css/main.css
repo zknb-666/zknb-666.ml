@@ -1540,12 +1540,6 @@ nav a {
   h1,h2,h3,h4,h5,h6 {
     color:rgb(255, 255, 255);
   }
-  #container .reply-content {
-    color: #fff !important;
-}
-#container .reply-btn-group .reply-comment-btn .comment-title {
-   color: #fff !important;
-}
 .loader{
   background: #000;
 }
@@ -1557,6 +1551,25 @@ nav a {
 }
 .aplayer svg{
   background: #000 !important;
+}
+.aplayer .aplayer-list ol li{
+  border-top: 1px solid rgb(0, 0, 0) !important;
+  background:rgb(0, 0, 0) !important;
+}
+.aplayer .aplayer-list ol li.aplayer-list-light{
+  background: #333 !important;
+}
+.aplayer .aplayer-list ol li:hover {
+  background: #555 !important;
+}
+.aplayer.aplayer-fixed .aplayer-info{
+  border-top: 1px solid #000 !important;
+}
+.aplayer .aplayer-pic .aplayer-play{
+  border: 2px solid #000 !important;
+}
+.aplayer .aplayer-pic .aplayer-pause{
+  border: 2px solid rgb(0, 0, 0) !important;
 }
   }
 /*darkmode eng*/
