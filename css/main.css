@@ -79,7 +79,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #00688B; 
+  color: #272727; 
 
 }
 p a {
@@ -1570,6 +1570,10 @@ nav a {
 }
 .aplayer .aplayer-pic .aplayer-pause{
   border: 2px solid rgb(0, 0, 0) !important;
+}
+a {
+  text-decoration: none;
+  color: #888888; 
 }
   }
 /*darkmode eng*/
