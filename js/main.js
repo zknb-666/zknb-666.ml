@@ -56,11 +56,3 @@
         $(".shang_box").fadeToggle();
     }
     /*打赏结束*/
-    /*darkmode*/
-      if (
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-        ) {
-        // dark mode do something
-        }
-    /*darkmode end*/
