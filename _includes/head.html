@@ -43,18 +43,14 @@
 <!-- 百度统计 -->
   {% if site.baidu.id %}
   <script>
-      var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "//hm.baidu.com/hm.js?{{site.baidu.id}}";
-        hm.onload = function() {
-            // 清除百度统计的加载标识
-            delete window["_bdhm_loaded_{{site.baidu.id}}"];
-        };
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();
-  </script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?{{site.baidu.id}}";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
   {% endif %}
 
 <!-- google 统计 -->
