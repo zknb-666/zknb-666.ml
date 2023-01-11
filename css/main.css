@@ -607,17 +607,6 @@ img::-moz-selection {
     width: 22%;
    }
 
-  .panel-cover--overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    filter: blur(5px);
-    background-size: cover;
-    background-image: inherit;
-   } 
-
   .panel-cover__logo {
     margin-bottom: .2em; }
 
