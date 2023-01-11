@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(https://cdn.jsdelivr.net/npm/animate.css/animate.min.css);
+@import url(https://gcore.jsdelivr.net/npm/animate.css/animate.min.css);
 @import url(tomorrow.css);
 *{transform: translate3d(0);
   transition: all 0.5s ease-in-out;}
