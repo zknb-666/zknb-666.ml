@@ -596,10 +596,11 @@ img::-moz-selection {
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   }
   .panel-cover {
-    display: block;
     position: fixed;
     width: 100%;
     height: 100%;
+    background-position: center;
+    background-size: cover;
     }
 
   .panel-cover--collapsed {
@@ -615,8 +616,6 @@ img::-moz-selection {
     filter: blur(5px);
     background-size: cover;
     background-image: inherit;
-    border-radius:50px;
-    border:2px solid;
    } 
 
   .panel-cover__logo {
@@ -1192,7 +1191,7 @@ input[type="tel"]:-ms-input-placeholder {
   .panel-cover {
     width: 100%;
     height: 100%;
-    background-position: center center; 
+    background-position: center; 
   }
   .panel-cover.panel-cover--collapsed {
     display: block;
@@ -1200,7 +1199,7 @@ input[type="tel"]:-ms-input-placeholder {
     height: 35%;
     min-height: 350px;
     padding: 0;
-    background-position: center center; 
+    background-position: center; 
   }
   .panel-cover.panel-cover--collapsed .panel-main__inner {
     display: block;
