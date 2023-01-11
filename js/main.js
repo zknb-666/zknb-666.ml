@@ -1,9 +1,11 @@
     /*加载等待*/
     document.onreadystatechange = function () {
     if (document.readyState == "complete") {    
-        $(".loader-div").hide();
+        $(".loader-div").hide('animate__bounceOut');
         $("#pageContent").removeClass("loadhidden");
         $('.footer_div').removeClass('loadhidden');
+        if (!$('.panel-cover').hasClass('panel-cover--collapsed'))
+        $('.panel-cover').addClass('animate__bounceIn');
     }}
     /*加载等待结束*/
     /*Pjax功能*/
