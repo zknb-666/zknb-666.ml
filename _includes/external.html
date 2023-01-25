@@ -39,6 +39,11 @@
 </style>
 
 <!-- require MetingJS -->
+{% if site.meting.api %}
+<script>
+var meting_api='{{site.meting.api}}';
+</script>
+{% endif %}
 <script src="//gcore.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
 
 <!-- 一言 -->
