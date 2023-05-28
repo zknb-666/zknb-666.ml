@@ -12,8 +12,8 @@ GEM
     eventmachine (1.2.7-x64-mingw32)
     eventmachine (1.2.7-x86-mingw32)
     ffi (1.15.5)
-    ffi (1.15.5-x64-mingw-ucrt)
     ffi (1.15.5-x64-mingw32)
+    ffi (1.15.5-x64-unknown)
     ffi (1.15.5-x86-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
@@ -71,7 +71,7 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  x64-mingw-ucrt
+  ruby
   x64-mingw32
   x64-unknown
   x86-mingw32
