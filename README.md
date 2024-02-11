@@ -1,3 +1,3 @@
- ## Demo&Blog: [page](https://blog.zknb.cf)
+ ## Demo&Blog: [page](https://blog.zknb.top)
 
 
