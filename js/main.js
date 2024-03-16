@@ -31,16 +31,10 @@
     });
     /*超链接触发结束*/
     /*逻辑判断*/
-    if (window.location.hash && window.location.hash == "#blog") {
-        $(".panel-cover").addClass("panel-cover--collapsed");
-    }
-
-    if ($('.panel-cover').hasClass('panel-cover--collapsed')) {
-        $("#pageContent").removeClass("hidden");
-        $('.footer_div').removeClass('hidden');
-        setTimeout(function(){  $(".panel-cover").addClass("bgsize");},15);
-    }
+    if (window.location.hash || window.location.hash == "#blog")
+        $(".panel-cover").removeClass("panel-cover--collapsed");
     /*逻辑判断结束*/
+    
     /*打赏*/
     $(function(){
         $(".pay_item").click(function(){

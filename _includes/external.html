@@ -45,7 +45,19 @@ var meting_api='{{site.meting.api}}';
 <script src="//cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script>
 
 <!-- 一言 -->
-<script src="//v1.hitokoto.cn/?c=a&encode=js&select=%23hitokoto" defer></script>
+<script>
+   function loveHitokoto() {
+      fetch("https://v1.hitokoto.cn?c=a")
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+              $('#hitokoto_text').text(data.hitokoto);
+              $('#hitokoto_author').text("——《" + (data.from) + "》");
+            })
+    }
+    loveHitokoto();
+</script>
 
 <!--Animate.css-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css/animate.css">
