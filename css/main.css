@@ -45,7 +45,7 @@ table {
 
 body {
   width: 100%;
-  *zoom: 1; 
+  zoom: 1; 
 }
 body:before, body:after {
   content: "";
@@ -388,7 +388,7 @@ img::-moz-selection {
       background-color: #fff;
       display: flex;
       z-index: 99999;
-      position:absolute;
+      position:fixed;
     }
     .loader {
       width: 215px;
