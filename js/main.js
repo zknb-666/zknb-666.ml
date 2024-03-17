@@ -31,8 +31,10 @@
     });
     /*超链接触发结束*/
     /*逻辑判断*/
-    if (window.location.hash || window.location.hash == "#blog")
+    if (location.pathname == "/")
         $(".panel-cover").removeClass("panel-cover--collapsed");
+    else
+        $(".panel-cover").addClass("panel-cover--collapsed");
     /*逻辑判断结束*/
     
     /*打赏*/
