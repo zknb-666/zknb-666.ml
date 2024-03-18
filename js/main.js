@@ -61,3 +61,11 @@
         $(".shang_box").fadeToggle();
     }
     /*打赏结束*/
+    /*菜单变换*/
+    document.addEventListener("scroll",function(){
+    if($(document).scrollTop() == 0)
+    $(".btn-menu").removeClass("menu-background");
+    else
+    $(".btn-menu").addClass("menu-background");
+    });
+    /*结束*/
