@@ -1,9 +1,11 @@
     /*加载等待*/
     document.onreadystatechange = function () {
+        $("#pageContent").hide();
+        $('.footer_div').hide();
     if (document.readyState == "complete") {    
         $(".loader-div").hide('animate__bounceOut');
-        $("#pageContent").removeClass("loadhidden");
-        $('.footer_div').removeClass('loadhidden');
+        $("#pageContent").show();
+        $('.footer_div').show();
         if (!$('.panel-cover').hasClass('panel-cover--collapsed'))
         $('.panel-cover').addClass('animate__bounceIn');
     }}
@@ -32,9 +34,15 @@
     /*超链接触发结束*/
     /*逻辑判断*/
     if (location.pathname == "/")
-        $(".panel-cover").removeClass("panel-cover--collapsed");
+        {
+            $(".panel-cover").removeClass("panel-cover--collapsed");
+            $(".panel-main__content").show();
+        }
     else
-        $(".panel-cover").addClass("panel-cover--collapsed");
+        {
+            $(".panel-cover").addClass("panel-cover--collapsed");
+            $(".panel-main__content").hide();
+        }
     /*逻辑判断结束*/
     
     /*打赏*/

@@ -249,7 +249,9 @@ td:last-child {
   padding-right: 10px; 
   border: 1px solid #363636;
 }
-
+.blog-button{
+  left: 50%;
+}
 /*pager start----------------*/
 .post-container 
 .pager li{ 
@@ -744,11 +746,12 @@ img::-moz-selection {
   .btn-mobile-menu {
     display: block;
     position: fixed;
-    mix-blend-mode: difference;
     z-index: 9999;
     width: 100%;
     height: 40px;
     text-align: center; 
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
   }
   .btn-mobile-menu_item {
     position: relative;
@@ -1126,14 +1129,13 @@ input[type="tel"]:-ms-input-placeholder {
 nav a {
   position: relative;
   display: inline-block;
-  margin-top: 15px;
-  margin-right: 20px;
+  margin-top: 13px;
+  margin-right: 25px;
 }
 
 .nav-menu-item a {
   padding: 0px;
   color: #fff;
-  mix-blend-mode: difference;
   font-weight: 700;
   font-size: .8em;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
@@ -1240,6 +1242,8 @@ a {
   color: #888888; 
 }
 .shang_box{min-width: 258px;padding:10px;background-color:#000000cc;border-radius:10px;position:fixed;z-index:1000;left:50%;top:50%;margin-left:-145px;margin-top:-210px;box-shadow: 5px 5px 5px #888888;display:none;}
-
-  }
-/*darkmode eng*/
+.btn-mobile-menu {
+  background-color: rgba(0, 0, 0, 0.5)!important;
+}
+}
+  /*darkmode eng*/
