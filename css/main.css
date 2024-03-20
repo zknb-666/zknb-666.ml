@@ -92,7 +92,6 @@ body {
 ::-moz-selection {
 	background: #f39ca4;
 }
-
 a {
 	color: #272727;
 	text-decoration: none;
@@ -519,15 +518,12 @@ img::-moz-selection {
 .content-wrapper {
 	margin: 0 auto;
 	max-width: none;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
 }
 
 .content-wrapper__inner {
-    /* margin: 0 10%; */
-    /* margin: 0 auto; */
-	margin-right: 60px;
-	padding: 50px 0;
-    /* width: 700px; */
+	padding: 50px;
 }
 
 .footer {
@@ -1500,7 +1496,7 @@ nav a {
 		text-decoration: none;
 	}
     .content-wrapper{
-        background-color: #000 !important;
+        background-color: rgb(0, 0, 0, 0.5) !important;
     }
 	.shang_box {
 		position: fixed;
