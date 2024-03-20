@@ -3,8 +3,27 @@
 
   {% include head.html %}
 
-  <body>
-    <div class="loader-div"> 
+  <body  style="background-image: url('{{site.background}}')">
+    <meting-js
+        preload="ture"
+        fixed="ture"
+        server="{{site.meting.server}}"
+        type="{{site.meting.type}}"
+        id="{{site.meting.id}}"
+        theme="#{{site.meting.theme}}">
+        </meting-js>
+{% if site.meting.autohide %}
+<style type="text/css">
+
+.aplayer.aplayer-narrow .aplayer-body {
+    left: -66px !important;
+}
+.aplayer-body:hover {
+    left: 0px !important;
+}
+</style>
+{% endif %}
+    <div class="loader-div animate__slower"> 
     <span class="loader"></span>
   </div>
 
@@ -35,10 +54,9 @@
           <div id="pageContent"> 
             {{ content }}
           </div> 
-        </div>
-        {% include footer.html %}
+        </div> 
     </div>
-    
+    {% include footer.html %}
     {% include external.html %}
     
   </body>
